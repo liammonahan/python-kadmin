@@ -41,6 +41,18 @@ It is advised that kadmin_local is used for rapid unpacked iteration, other task
 >>>
 ```
 
+###Principal Deletion:
+
+```python
+>>>
+>>> # princ.delete()
+>>> # this method will return True if deletion succeeded; False otherwise.
+>>>
+>>> princ = kadm.getprinc("user@EXAMPLE.COM")
+>>> princ.delete()
+>>>
+```
+
 ###Principal Attributes:
 ```python
 >>> princ = kadm.getprinc("user@EXAMPLE.COM")
